@@ -42,6 +42,7 @@ return {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" },
+    event = "VeryLazy",
     config = function()
       local harpoon = require('harpoon')
       harpoon:setup({})
@@ -76,10 +77,31 @@ return {
         }):find()
       end
 
-      vim.keymap.set("n", "<C-e>", function() 
-        toggle_telescope(harpoon:list()) 
+      vim.keymap.set("n", "<C-e>", function()
+        toggle_telescope(harpoon:list())
       end,
           { desc = "Open harpoon window" })
     end,
+  },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Buffer Local Keymaps (which-key)",
+      },
+    },
+  },
+  {
+    "echasnovski/mini.nvim",
   },
 }
