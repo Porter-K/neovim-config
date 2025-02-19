@@ -1,5 +1,6 @@
 require("config.lazy")
 
+vim.cmd 'colorscheme tokyonight'
 
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
