@@ -137,5 +137,8 @@ return {
       }
     end,
     dependencies = { {'nvim-tree/nvim-web-devicons'}}
-  }
+  },
+  {
+    "pluffie/neoproj",
+  },
 }
