@@ -8,7 +8,7 @@
   "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },
   "mini.nvim": { "branch": "main", "commit": "a84b7e555fe382c1859e6ca46b4983c822a1f77f" },
   "nvim-lspconfig": { "branch": "master", "commit": "1110787f1b464888c59a044c48c5119d14078044" },
-  "nvim-treesitter": { "branch": "master", "commit": "36bbf518420918e965d11dad3d3f194803c47731" },
+  "nvim-treesitter": { "branch": "master", "commit": "cb8e810a1ea3f562e95a259df3065c7c23decf7a" },
   "nvim-web-devicons": { "branch": "master", "commit": "1020869742ecb191f260818234517f4a1515cfe8" },
   "persistence.nvim": { "branch": "main", "commit": "f6aad7dde7fcf54148ccfc5f622c6d5badd0cc3d" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
