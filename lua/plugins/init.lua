@@ -116,5 +116,14 @@ return {
 	    {"n", "<leader>ql", function() require("persistence").load({ last = true }) end, desc = "Load last session",},
       {"n", "<leader>qd", function() require("persistence").stop() end, desc = "Stop persistence, don't save session on exit",},
     },
-  }
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require('gitsigns').setup()
+    end,
+  },
+  {
+    "tpope/vim-fugitive",
+  },
 }
