@@ -69,4 +69,12 @@ return {
       vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
     end,
   },
+  {
+    "ahmedkhalf/project.nvim",
+    config = function()
+      require("project_nvim").setup {
+      }
+      require('telescope').load_extension('projects')
+    end
+  },
 }

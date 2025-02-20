@@ -2,6 +2,7 @@ return {
   {
     'nvimdev/dashboard-nvim',
     event = 'VimEnter',
+    dependencie = { "Telescope", "persistence", },
     config = function()
       local logo = [[
         ███╗  ██╗██╗   ██╗██╗███╗   ███╗
@@ -20,7 +21,8 @@ return {
           center = {
             { action = "Telescope find_files",                           desc = " Find File",       icon = " ", key = "f" },
             { action = "ene | startinsert",                              desc = " New File",        icon = " ", key = "n" },
-            { action = 'lua require("persistence").load()',              desc = " Restore Session", icon = " ", key = "s" },
+            { action = "lua require('persistence').load()",              desc = " Restore Session", icon = " ", key = "s" },
+            { action = "Telescope projects",                             desc = " Open Project",    icon = " ", key = "p" },
             { action = "Lazy",                                           desc = " Lazy",            icon = "󰒲 ", key = "l" },
             { action = function() vim.api.nvim_input("<cmd>qa<cr>") end, desc = " Quit",            icon = " ", key = "q" },
           },
