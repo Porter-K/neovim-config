@@ -1,5 +1,12 @@
 return {
   {
+    "nvim-java/nvim-java",
+    dependencies = { "neovim/nvim-lspconfig", },
+    config = function()
+      require('java').setup()
+    end,
+  },
+  {
     "williamboman/mason.nvim",
     config = function()
       require("mason").setup()
@@ -61,14 +68,13 @@ return {
     dependencies = {
       { "ms-jpq/coq_nvim", branch = "coq" },
       { "ms-jpq/coq.artifacts", branch = "artifacts" },
+      { 'ms-jpq/coq.thirdparty', branch = "3p" },
+
     },
     init = function()
       vim.g.coq_settings = {
-        auto_start = true,
+        auto_start = 'shut-up',
       }
     end,
-  },
-  {
-    "ms-jpq/coq_nvim",
   },
 }

@@ -42,8 +42,9 @@ return {
 					},
           typescript = {
             require("formatter.filetypes.typescript").prettierd,
-
-
+          },
+          java = {
+            require("formatter.filetypes.java").google_java_format,
           },
 					-- Use the special "*" filetype for defining formatter configurations on
 					-- any filetype
