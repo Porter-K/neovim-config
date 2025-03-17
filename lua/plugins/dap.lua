@@ -1,9 +1,11 @@
 return {
   {
     "mfussenegger/nvim-dap",
+    cmd = { "Debug", },
   },
   {
     "rcarriga/nvim-dap-ui",
+    keys = {},
     dependencies = {
       "mfussenegger/nvim-dap",
       "nvim-neotest/nvim-nio",
@@ -27,6 +29,7 @@ return {
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
+    keys = {},
     dependencies = {
       "mwilliamboman/mason.nvim",
     },

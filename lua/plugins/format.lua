@@ -1,6 +1,8 @@
 return {
 	{
 		"mhartington/formatter.nvim",
+    cmd = {"Format", "FormatWrite", "FormatLock", "FormatWriteLock" },
+    keys = {{"<leader>cf", "<cmd>Format<CR>", 'n'},},
 		config = function()
 			-- Provides the Format, FormatWrite, FormatLock, and FormatWriteLock commands
 			require("formatter").setup({
