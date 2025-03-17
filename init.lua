@@ -1,16 +1,6 @@
 require("config.lazy")
-
-vim.cmd 'colorscheme tokyonight'
-
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-
-vim.opt.scrolloff = 10
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.cursorline = true
+require("config.colors")
+require("config.options")
+require("config.keymaps")
 
 
-vim.keymap.set('n', "<Leader>db", ":JavaBuildBuildWorkspace<CR>")
-vim.keymap.set('n', "<Leader>dr", ":JavaRunnerRunMain<CR>")
