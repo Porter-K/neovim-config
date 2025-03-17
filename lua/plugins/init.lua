@@ -1,11 +1,5 @@
 return {
   {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = { style = "night" },
-  },
-  {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     config = function ()
@@ -41,19 +35,6 @@ return {
     "echasnovski/mini.nvim",
   },
   {
-    "folke/persistence.nvim",
-    event = "BufReadPre", -- this will only start session saving when an actual file was opened
-    opts = {
-      -- add any custom options here
-    },
-    keys = {
-      {"n", "<leader>qs", function() require("persistence").load() end, desc = "Load current directory session",},
-	    {"n", "<leader>qS", function() require("persistence").select() end, desc = "Select session",},
-	    {"n", "<leader>ql", function() require("persistence").load({ last = true }) end, desc = "Load last session",},
-      {"n", "<leader>qd", function() require("persistence").stop() end, desc = "Stop persistence, don't save session on exit",},
-    },
-  },
-  {
     "lewis6991/gitsigns.nvim",
     config = function()
       require('gitsigns').setup()
@@ -68,13 +49,5 @@ return {
       vim.keymap.set('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>')
       vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
     end,
-  },
-  {
-    "ahmedkhalf/project.nvim",
-    config = function()
-      require("project_nvim").setup {
-      }
-      require('telescope').load_extension('projects')
-    end
   },
 }
