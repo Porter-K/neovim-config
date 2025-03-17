@@ -17,9 +17,6 @@ return {
     "folke/which-key.nvim",
     event = "VeryLazy",
     opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
     },
     keys = {
       {
@@ -45,6 +42,7 @@ return {
   },
   {
     "numToStr/FTerm.nvim",
+    event = "VeryLazy",
     config = function()
       vim.keymap.set('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>')
       vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
