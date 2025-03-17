@@ -31,16 +31,6 @@ return {
 		"echasnovski/mini.nvim",
 	},
 	{
-		"lewis6991/gitsigns.nvim",
-		event = "VeryLazy",
-		config = function()
-			require("gitsigns").setup()
-		end,
-	},
-	{
-		"tpope/vim-fugitive",
-	},
-	{
 		"numToStr/FTerm.nvim",
 		keys = {
 			{ "<A-i>", '<CMD>lua require("FTerm").toggle()<CR>', mode = "n" },
