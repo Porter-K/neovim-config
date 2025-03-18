@@ -9,5 +9,8 @@ return {
 			{ "<leader>tl", ":TestLast<CR>", mode = "n" },
 			{ "<leader>tg", ":TestVisit<CR>", mode = "n" },
 		},
+		config = function()
+			vim.cmd("let test#strategy = 'vimux'")
+		end,
 	},
 }
