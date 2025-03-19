@@ -13,4 +13,13 @@ return {
 			vim.cmd("let test#strategy = 'vimux'")
 		end,
 	},
+	{
+		"tyewang/vimux-jest-test",
+		cmd = {
+			"RunJest",
+			"RunJestOnBuffer",
+			"RunJestFocused",
+		},
+		dependencies = { "preservim/vimux" },
+	},
 }
