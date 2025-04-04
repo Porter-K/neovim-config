@@ -8,8 +8,8 @@ return {
 			configs.setup({
 				ensure_installed = { "c", "lua", "python" },
 				sync_install = false,
-				highlight = { enable = true },
-				indent = { enable = true },
+				highlight = { disable = { "php" } },
+				indent = { disable = { "php" } },
 			})
 		end,
 	},

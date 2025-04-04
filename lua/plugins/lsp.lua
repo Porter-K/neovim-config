@@ -8,7 +8,7 @@ return {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
-		ft = { "typescript", "javascript", "lua", "c", "cpp" },
+		event = "VeryLazy",
 		config = function()
 			require("mason-lspconfig").setup()
 			require("mason-lspconfig").setup_handlers({
